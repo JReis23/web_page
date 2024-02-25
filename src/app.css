@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		--color-green: 166deg 100% 70%;
+		--color-light_green: 166deg 100% 70% / 50%;
+		--color-dark_navy: 216deg 86% 6%;
+		--color-navy: 216deg 65% 11%;
+		--color-light_navy: 218deg 58% 16%;
+		--color-lightest_navy: 218deg 41% 23%;
+		--color-slate: 225deg 20% 61%;
+		--color-slate_opacity: hsl(225deg 20% 61%/20%);
+		--color-light_slate: 225deg 31% 74%;
+		--color-lightest_slate: 226deg 70% 88%;
+		--color-white: 214deg 100% 95%;
+	}
+
+	html {
+		@apply scroll-smooth bg-navy text-slate transition duration-500;
+		font-family: 'Source Code Pro', monospace;
+		font-optical-sizing: auto;
+		font-weight: 400;
+		font-style: normal;
+	}
+
+	body {
+		@apply flex min-h-dvh flex-col items-center justify-center leading-relaxed tracking-wide;
+		counter-reset: section;
+	}
+
+	section {
+		@apply container mx-auto flex min-h-dvh w-full max-w-4xl flex-col justify-center divide-y-8 divide-navy py-16;
+	}
+
+	section .numbered-heading {
+		@apply container mx-auto text-center;
+	}
+
+	label {
+		font-family: 'Kode Mono', monospace;
+	}
+
+	input[type='text'],
+	input[type='email'],
+	textarea {
+		@apply form-input resize-none rounded-lg bg-light_navy text-white focus:border-light_slate focus:bg-lightest_navy focus:ring-light_slate;
+	}
+
+	input:-webkit-autofill,
+	input:-webkit-autofill:hover,
+	input:-webkit-autofill:focus,
+	input:-webkit-autofill:active {
+		-webkit-text-fill-color: #e5f1ff !important;
+		background-color: var(--color-light_navy) !important;
+		transition: background-color 5000s ease-in-out 0s;
+	}
+
+	button {
+		font-family: 'Kode Mono', monospace;
+	}
+
+	h1 {
+		@apply text-5xl font-bold;
+	}
+
+	h2 {
+		@apply text-3xl font-bold text-green;
+		font-family: 'Kode Mono', monospace;
+	}
+
+	h3 {
+		@apply text-3xl text-light_slate;
+	}
+
+	li {
+		font-family: 'Kode Mono', monospace;
+		font-optical-sizing: auto;
+		font-weight: 400;
+		font-style: normal;
+	}
+}
