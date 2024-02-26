@@ -3,25 +3,11 @@ import Button from '$lib/ui/Button.svelte';
 
 let societyButton: string | null = 'lectra';
 
-const handleNoveoo = () => {
-	societyButton = 'noveoo';
-};
-
-const handleMontauban = () => {
-	societyButton = 'montauban';
-};
-
-const handleRwf = () => {
-	societyButton = 'rwf';
-};
-
-const handlePatriarca = () => {
-	societyButton = 'patriarca';
-};
-
-const handleLectra = () => {
-	societyButton = 'lectra';
-};
+const handleSociety =
+	(society: string) =>
+	(event: CustomEvent<any>): void => {
+		societyButton = society;
+	};
 
 let className = 'border-l-2 hover:border-green primary hover:text-green p-2 text-start text-sm';
 </script>
@@ -31,27 +17,27 @@ let className = 'border-l-2 hover:border-green primary hover:text-green p-2 text
 	<div class="container flex pt-6">
 		<div class="flex flex-col pr-10">
 			<Button
-				on:click={handleLectra}
+				on:click={handleSociety('lectra')}
 				active={societyButton === 'lectra' ? 'active' : ''}
 				className={className}>Lectra</Button
 			>
 			<Button
-				on:click={handleNoveoo}
+				on:click={handleSociety('noveoo')}
 				active={societyButton === 'noveoo' ? 'active' : ''}
 				className={className}>Noveoo</Button
 			>
 			<Button
-				on:click={handleMontauban}
+				on:click={handleSociety('montauban')}
 				active={societyButton === 'montauban' ? 'active' : ''}
 				className={className}>Montauban</Button
 			>
 			<Button
-				on:click={handleRwf}
+				on:click={handleSociety('rwf')}
 				active={societyButton === 'rwf' ? 'active' : ''}
 				className={className}>RWF</Button
 			>
 			<Button
-				on:click={handlePatriarca}
+				on:click={handleSociety('patriarca')}
 				active={societyButton === 'patriarca' ? 'active' : ''}
 				className={className}>Patriarca</Button
 			>

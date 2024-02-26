@@ -33,12 +33,12 @@ export let closeModal: () => void;
 	</label>
 	<div class="self-end pt-4">
 		<Button
-			className={'secondary border-2 p-2 rounded w-32 trasition duration-500'}
+			className={'secondary border-2 p-2 rounded w-32 trasition duration-500 text-sm'}
 			on:click={closeModal}
 			type={'button'}>Annuler</Button
 		>
 		<Button
-			className={'primary border-2 border-green p-2 rounded w-32 text-green trasition duration-500'}
+			className={'primary border-2 border-green p-2 rounded w-32 text-green trasition duration-500 text-sm'}
 			type={'submit'}>Envoyer</Button
 		>
 	</div>
