@@ -1,5 +1,6 @@
 <script lang="ts">
 import Contact from '$lib/components/Contact.svelte';
+import Me from '$lib/components/Me.svelte';
 import Main from '$lib/components/Main.svelte';
 import Nav from '$lib/components/Nav.svelte';
 import Modal from '$lib/components/Modal.svelte';
@@ -24,6 +25,7 @@ function closeModal() {
 
 <Nav />
 <Main openModal={openModal} />
+<Me />
 <WorkPlaces />
 <Social />
 <Modal isOpen={isOpen}>

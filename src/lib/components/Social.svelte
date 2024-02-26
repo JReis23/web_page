@@ -7,7 +7,7 @@ import { onMount } from 'svelte';
 		<li class="social-link transition duration-700 hover:-translate-y-4 hover:shadow-xl">
 			<a href="https://github.com/JReis23" target="_blank" class="hover:shadow-xl">
 				<svg
-					class="w-8 fill-slate transition duration-300 hover:fill-green"
+					class="w-6 fill-slate transition duration-300 hover:fill-green"
 					fill="#000000"
 					width="52"
 					height="52"
@@ -39,7 +39,7 @@ import { onMount } from 'svelte';
 				class="hover:shadow-xl"
 			>
 				<svg
-					class="w-8 fill-slate transition duration-300 hover:fill-green"
+					class="w-6 fill-slate transition duration-300 hover:fill-green"
 					fill="#000000"
 					width="52"
 					height="52"
@@ -83,7 +83,7 @@ import { onMount } from 'svelte';
 		<li class="social-link transition duration-700 hover:-translate-y-4 hover:shadow-xl">
 			<a href="https://twitter.com/ego2323" target="_blank" class="hover:shadow-xl">
 				<svg
-					class="w-8 fill-slate transition duration-300 hover:fill-green"
+					class="w-6 fill-slate transition duration-300 hover:fill-green"
 					fill="#000000"
 					width="52"
 					height="52"
@@ -110,7 +110,7 @@ import { onMount } from 'svelte';
 		<li class="social-link transition duration-700 hover:-translate-y-4 hover:shadow-xl">
 			<a href="https://www.facebook.com/joao.reis.5832" target="_blank" class="">
 				<svg
-					class="w-8 fill-slate transition duration-300 hover:fill-green"
+					class="w-6 fill-slate transition duration-300 hover:fill-green"
 					fill="#000000"
 					width="52"
 					height="52"

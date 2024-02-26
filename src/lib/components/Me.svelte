@@ -2,7 +2,7 @@
 </script>
 
 <section id="me" class="me">
-	<h2 class="numbered-heading">Moi</h2>
+	<h2 class="numbered-heading">Qui je suis ?</h2>
 	<article>
 		<div>
 			<div class="about">
@@ -48,104 +48,104 @@
 </section>
 
 <style>
-	section {
+section {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+}
+article {
+	display: flex;
+
+	& .stack {
 		display: flex;
-		flex-flow: column;
-		justify-content: center;
-	}
-	article {
-		display: flex;
-
-		& .stack {
-			display: flex;
-		}
-
-		& .about {
-			max-width: 75ch;
-			padding-right: 2rem;
-		}
 	}
 
-	ul {
-		padding-right: 5rem;
-		padding-top: 3rem;
+	& .about {
+		max-width: 75ch;
+		padding-right: 2rem;
+	}
+}
+
+ul {
+	padding-right: 5rem;
+	padding-top: 3rem;
+}
+
+ul li {
+	&::before {
+		content: '▹';
+		color: var(--contrast-color);
+		margin-right: 1.175rem;
+	}
+}
+picture {
+	position: relative;
+	display: inline-block;
+	transition: 0.5s ease-in-out;
+	border-radius: 5px;
+	z-index: 1;
+
+	&::before {
+		content: '';
+		border: 1px solid var(--contrast-color);
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		width: 100%;
+		height: 100%;
+		transition: 0.5s ease-in-out;
+		border-radius: 5px;
 	}
 
-	ul li {
-		&::before {
-			content: '▹';
-			color: var(--contrast-color);
-			margin-right: 1.175rem;
-		}
-	}
-	picture {
-		position: relative;
-		display: inline-block;
+	&::after {
+		content: '';
+		background: var(--contrast-color-transparent);
+		position: absolute;
+		display: block;
+		width: 100%;
+		top: 0;
+		bottom: 0;
 		transition: 0.5s ease-in-out;
 		border-radius: 5px;
 		z-index: 1;
-
-		&::before {
-			content: '';
-			border: 1px solid var(--contrast-color);
-			position: absolute;
-			top: 10px;
-			left: 10px;
-			width: 100%;
-			height: 100%;
-			transition: 0.5s ease-in-out;
-			border-radius: 5px;
-		}
-
-		&::after {
-			content: '';
-			background: var(--contrast-color-transparent);
-			position: absolute;
-			display: block;
-			width: 100%;
-			top: 0;
-			bottom: 0;
-			transition: 0.5s ease-in-out;
-			border-radius: 5px;
-			z-index: 1;
-		}
-
-		&:hover {
-			transition: 0.5s ease-in-out;
-			transform: translateY(-3px);
-		}
-
-		&:hover::before {
-			transition: 0.5s ease-in-out;
-			transform: translateY(-5px);
-			transform: translateX(-5px);
-		}
-
-		&:hover::after {
-			background: none;
-			transition: 0.5s ease-in-out;
-			transform: translateY(-3px);
-		}
 	}
 
-	img {
-		border-radius: 5px;
-		z-index: 1;
-		position: relative;
-		max-width: 15rem;
+	&:hover {
+		transition: 0.5s ease-in-out;
+		transform: translateY(-3px);
 	}
-	@media (max-width: 768px) {
-		.photo {
-			display: flex;
-			justify-content: center;
-			padding-top: 5rem;
-		}
 
-		ul {
-			display: flex;
-			justify-content: space-around;
-			flex-direction: column;
-			padding: 2rem;
-		}
+	&:hover::before {
+		transition: 0.5s ease-in-out;
+		transform: translateY(-5px);
+		transform: translateX(-5px);
 	}
+
+	&:hover::after {
+		background: none;
+		transition: 0.5s ease-in-out;
+		transform: translateY(-3px);
+	}
+}
+
+img {
+	border-radius: 5px;
+	z-index: 1;
+	position: relative;
+	max-width: 15rem;
+}
+@media (max-width: 768px) {
+	.photo {
+		display: flex;
+		justify-content: center;
+		padding-top: 5rem;
+	}
+
+	ul {
+		display: flex;
+		justify-content: space-around;
+		flex-direction: column;
+		padding: 2rem;
+	}
+}
 </style>

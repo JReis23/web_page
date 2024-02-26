@@ -17,8 +17,8 @@ export let openModal: () => void;
 	<div class="pt-8">
 		<Button
 			on:click={openModal}
-			className="primary border-2 border-green p-4 rounded w-fit text-green trasition duration-500"
-			>Envoi une message ...
+			className="primary border-2 border-green p-3 text-sm rounded w-fit text-green trasition duration-500"
+			>Envoyer une message ...
 		</Button>
 	</div>
 </section>

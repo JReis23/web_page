@@ -5,6 +5,10 @@ import { join } from 'path';
 export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
+		fontFamily: {
+			CodePro: ['Source Code Pro'],
+			KodeMono: ['Kode Mono']
+		},
 		colors: {
 			green: 'hsl(var(--color-green) / <alpha-value>)',
 			light_green: 'hsl(var(--color-light_green) / <alpha-value>)',
