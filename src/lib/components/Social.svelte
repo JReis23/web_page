@@ -1,12 +1,13 @@
 <script>
-	import { onMount } from 'svelte';
+import { onMount } from 'svelte';
 </script>
 
-<div class="social">
+<div class="social fixed bottom-8 left-8">
 	<ul>
-		<li class="social-link">
+		<li class="social-link transition duration-700 hover:-translate-y-4 hover:shadow-xl">
 			<a href="https://github.com/JReis23" target="_blank" class="hover:shadow-xl">
 				<svg
+					class="w-8 fill-slate transition duration-300 hover:fill-green"
 					fill="#000000"
 					width="52"
 					height="52"
@@ -31,13 +32,14 @@
 				</svg>
 			</a>
 		</li>
-		<li class="social-link hover:shadow-xl">
+		<li class="social-link transition duration-700 hover:-translate-y-4 hover:shadow-xl">
 			<a
 				href="https://www.linkedin.com/in/joao-reis-54199b177/"
 				target="_blank"
 				class="hover:shadow-xl"
 			>
 				<svg
+					class="w-8 fill-slate transition duration-300 hover:fill-green"
 					fill="#000000"
 					width="52"
 					height="52"
@@ -78,9 +80,10 @@
 				</svg>
 			</a>
 		</li>
-		<li class="social-link hover:shadow-xl">
+		<li class="social-link transition duration-700 hover:-translate-y-4 hover:shadow-xl">
 			<a href="https://twitter.com/ego2323" target="_blank" class="hover:shadow-xl">
 				<svg
+					class="w-8 fill-slate transition duration-300 hover:fill-green"
 					fill="#000000"
 					width="52"
 					height="52"
@@ -104,9 +107,10 @@
 				</svg>
 			</a>
 		</li>
-		<li class="social-link hover:shadow-xl">
-			<a href="https://www.facebook.com/joao.reis.5832" target="_blank" class="hover:shadow-xl">
+		<li class="social-link transition duration-700 hover:-translate-y-4 hover:shadow-xl">
+			<a href="https://www.facebook.com/joao.reis.5832" target="_blank" class="">
 				<svg
+					class="w-8 fill-slate transition duration-300 hover:fill-green"
 					fill="#000000"
 					width="52"
 					height="52"
@@ -135,44 +139,25 @@
 </div>
 
 <style>
-	ul {
-		padding: 4rem 4rem;
+a {
+	/* display: inline-block; */
+	/* transition-duration: 0.5s; */
+
+	&:hover {
+		transform: translateY(-5px);
+		color: var(--color-green);
 	}
+}
 
-	li {
-		&::before {
-			content: none;
-		}
+/* a svg {
+	&:hover {
+		fill: var(--color-green);
 	}
+} */
 
-	a {
-		display: inline-block;
-		transition-duration: 0.5s;
-
-		&:hover {
-			transform: translateY(-5px);
-			color: var(--contrast-color);
-		}
-	}
-
+@media (max-width: 768px) {
 	.social {
-		position: fixed;
-		bottom: 0;
-		left: 0;
+		display: none;
 	}
-
-	a svg {
-		fill: var(--text);
-		width: 1.5rem;
-
-		&:hover {
-			fill: var(--contrast-color);
-		}
-	}
-
-	@media (max-width: 768px) {
-		.social {
-			display: none;
-		}
-	}
+}
 </style>

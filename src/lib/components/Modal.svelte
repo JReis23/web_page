@@ -5,7 +5,7 @@ export let isOpen = false;
 
 {#if isOpen}
 	<div
-		class="fixed z-20 mx-auto h-1/2 w-2/3 rounded-md border border-green bg-dark_navy bg-opacity-20 bg-clip-padding backdrop-blur-lg backdrop-filter
+		class="fixed top-1/4 mx-auto h-1/2 w-2/3 rounded-md border border-green bg-dark_navy bg-opacity-20 bg-clip-padding backdrop-blur-lg backdrop-filter
 	"
 		transition:fade={{duration: 300}}
 	>

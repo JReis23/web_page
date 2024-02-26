@@ -7,32 +7,32 @@ function handleClick() {
 }
 
 interface ButtonProps {
-	primary: string | null;
-	secondary: string | null;
 	type: 'reset' | 'submit' | 'button';
 	cancel: string | null;
 	href: string | null;
 	rel: string | null;
 	target: string | null;
+	active: string | null;
+	className: string | null;
 }
 
-export let primary: ButtonProps['primary'] = '';
-export let secondary: ButtonProps['secondary'] = '';
 export let type: ButtonProps['type'] = 'button';
 export let cancel: ButtonProps['cancel'] = '';
 export let href: ButtonProps['href'] = '';
 export let rel: ButtonProps['rel'] = '';
 export let target: ButtonProps['target'] = '';
+export let active: ButtonProps['active'] = '';
+export let className: ButtonProps['className'] = '';
 </script>
 
 {#if href}
-	<a href={href} class="{primary} {secondary}" rel={rel} target={target}>
+	<a href={href} class={className} rel={rel} target={target}>
 		<slot />
 	</a>
 {:else}
 	<button
 		type={type}
-		class="{primary} {secondary} {cancel}"
+		class="{className} {cancel} {active}"
 		on:click={handleClick}
 		on:submit
 		on:cancel
@@ -51,6 +51,16 @@ export let target: ButtonProps['target'] = '';
 .secondary {
 	&:hover {
 		background-color: hsl(225deg 20% 61% / 20%);
+	}
+}
+
+.active {
+	&:focus,
+	&:active,
+	&:hover {
+		border-left-color: hsl(166deg 100% 70%);
+		color: hsl(166deg 100% 70%);
+		background-color: hsl(166deg 100% 70% / 20%);
 	}
 }
 </style>

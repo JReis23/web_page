@@ -1,60 +1,62 @@
-<script>
-	import Button from '$lib/ui/Button.svelte';
+<script lang="ts">
+import Button from '$lib/ui/Button.svelte';
 
-	export let societyButton = 'lectra';
+let societyButton: string | null = 'lectra';
 
-	const handleNoveoo = () => {
-		societyButton = 'noveoo';
-	};
+const handleNoveoo = () => {
+	societyButton = 'noveoo';
+};
 
-	const handleMontauban = () => {
-		societyButton = 'montauban';
-	};
+const handleMontauban = () => {
+	societyButton = 'montauban';
+};
 
-	const handleRwf = () => {
-		societyButton = 'rwf';
-	};
+const handleRwf = () => {
+	societyButton = 'rwf';
+};
 
-	const handlePatriarca = () => {
-		societyButton = 'patriarca';
-	};
+const handlePatriarca = () => {
+	societyButton = 'patriarca';
+};
 
-	const handleLectra = () => {
-		societyButton = 'lectra';
-	};
+const handleLectra = () => {
+	societyButton = 'lectra';
+};
+
+let className = 'border-l-2 hover:border-green primary hover:text-green p-2 text-start';
 </script>
 
 <section id="experience" class="workplaces">
 	<h2 class="numbered-heading">Où j'ai travaillé</h2>
-	<div class="container">
-		<div class="buttons-section">
+	<div class="container flex">
+		<div class="flex flex-col pr-10">
 			<Button
 				on:click={handleLectra}
-				active={societyButton === 'lectra' ? 'active' : null}
-				type="secondary">Lectra</Button
+				active={societyButton === 'lectra' ? 'active' : ''}
+				className={className}>Lectra</Button
 			>
 			<Button
 				on:click={handleNoveoo}
-				active={societyButton === 'noveoo' ? 'active' : null}
-				type="secondary">Noveoo</Button
+				active={societyButton === 'noveoo' ? 'active' : ''}
+				className={className}>Noveoo</Button
 			>
 			<Button
 				on:click={handleMontauban}
-				active={societyButton === 'montauban' ? 'active' : null}
-				type="secondary">Montauban</Button
+				active={societyButton === 'montauban' ? 'active' : ''}
+				className={className}>Montauban</Button
 			>
 			<Button
 				on:click={handleRwf}
-				active={societyButton === 'rwf' ? 'active' : null}
-				type="secondary">RWF</Button
+				active={societyButton === 'rwf' ? 'active' : ''}
+				className={className}>RWF</Button
 			>
 			<Button
 				on:click={handlePatriarca}
-				active={societyButton === 'patriarca' ? 'active' : null}
-				type="secondary">Patriarca</Button
+				active={societyButton === 'patriarca' ? 'active' : ''}
+				className={className}>Patriarca</Button
 			>
 		</div>
-		<div class="text-container">
+		<div class="container">
 			{#if societyButton === 'montauban'}
 				<div class="text-section">
 					<h3>
@@ -165,76 +167,76 @@
 	</div>
 </section>
 
-<style>
-	section {
-		display: flex;
-		flex-flow: column;
-		justify-content: center;
-	}
-	a {
-		display: inline-block;
-		position: relative;
-		font-size: 1.3rem;
-		color: var(--green);
-	}
+<!-- <style>
+section {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+}
+a {
+	display: inline-block;
+	position: relative;
+	font-size: 1.3rem;
+	color: var(--green);
+}
 
-	a:hover::before {
-		content: '';
-		position: absolute;
-		left: 0;
-		bottom: 0;
-		width: 0;
-		border-bottom: solid 1px var(--contrast-color);
-		animation: border_anim 0.7s forwards;
-	}
+a:hover::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0;
+	border-bottom: solid 1px var(--contrast-color);
+	animation: border_anim 0.7s forwards;
+}
 
+li {
+	color: var(--text);
+	max-width: 60ch;
+	font-size: 1.175em;
+	padding: auto;
+
+	&::before {
+		content: '▹';
+		color: var(--contrast-color-transparent);
+		margin-right: 1.175rem;
+	}
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	padding: 3rem 0;
+}
+
+.buttons-section {
+	display: flex;
+	flex-flow: column;
+}
+
+.text-container {
+	padding: 0 6rem 0 0;
+}
+
+@keyframes border_anim {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 100%;
+	}
+}
+
+@media (max-width: 768px) {
 	li {
-		color: var(--text);
-		max-width: 60ch;
-		font-size: 1.175em;
-		padding: auto;
-
-		&::before {
-			content: '▹';
-			color: var(--contrast-color-transparent);
-			margin-right: 1.175rem;
-		}
+		padding: 0.375rem 1rem;
 	}
 
-	.container {
-		display: flex;
-		justify-content: space-between;
-		padding: 3rem 0;
-	}
-
-	.buttons-section {
-		display: flex;
-		flex-flow: column;
-	}
-
-	.text-container {
-		padding: 0 6rem 0 0;
-	}
-
-	@keyframes border_anim {
-		0% {
-			width: 0%;
-		}
-		100% {
-			width: 100%;
-		}
-	}
-
-	@media (max-width: 768px) {
-		li {
-			padding: 0.375rem 1rem;
-		}
-
-		/* .buttons {
+	/* .buttons {
 			overflow-x: scroll;
 			-webkit-overflow-scrolling: touch;
 			width: 98vw;
 			white-space: nowrap;
 		} */
-	}
-</style>
+}
+</style> -->

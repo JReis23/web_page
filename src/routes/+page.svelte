@@ -5,6 +5,8 @@ import Nav from '$lib/components/Nav.svelte';
 import Modal from '$lib/components/Modal.svelte';
 import type { PageData } from './$types';
 import { superForm } from 'sveltekit-superforms/client';
+import Social from '$lib/components/Social.svelte';
+import WorkPlaces from '$lib/components/WorkPlaces.svelte';
 export let data: PageData;
 let isOpen = false;
 
@@ -22,6 +24,8 @@ function closeModal() {
 
 <Nav />
 <Main openModal={openModal} />
+<WorkPlaces />
+<Social />
 <Modal isOpen={isOpen}>
 	<Contact
 		closeModal={closeModal}
@@ -29,6 +33,5 @@ function closeModal() {
 		form={form}
 		errors={errors}
 		message={message}
-		reset={reset}
 	/>
 </Modal>

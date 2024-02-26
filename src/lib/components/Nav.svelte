@@ -24,7 +24,7 @@ function scrollIntoView({ target }) {
 
 <header class="fixed left-0 top-0 z-10 w-full py-4">
 	<nav class="flex justify-between">
-		<div class="logo">
+		<div class="logo w-14">
 			<img src="/img/vectorpaint.svg" alt="logo joao reis" />
 		</div>
 		<ol class="flex">
