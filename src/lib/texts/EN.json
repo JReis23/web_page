@@ -1,0 +1,58 @@
+{
+	"workplaces": [
+		{
+			"company": "Lectra",
+			"position": "Software Developer in JavaScript",
+			"date": "June 2022 to Present",
+			"details": {
+				"description": "As a Project Owner and developer within an Agile team, I am responsible for the successful implementation and integration of our company's PLM into our's customers ecosystems.",
+				"responsibilities": "By overseeing every aspect of the project from requirements analysis to final delivery, I ensure that customized solutions fully meet customer expectations. My role also includes coordinating development efforts and ensuring code and feature quality, while ensuring smooth integration with client's existing systems.",
+				"conclusion": "Essentially, as a Project Owner, I am committed to ensuring the overall success of the PLM project, maintaining a clear vision throughout the process, while actively contributing to PLM development."
+			},
+			"company_url": "https://www.montauban-renovation.com/"
+		},
+		{
+			"company": "Noveoo",
+			"position": "Web Developer / Founder",
+			"date": "September 2021 to 2022",
+			"details": {
+				"description": "Our company offered services including creating Showcase, E-commerce, and custom websites, as well as website redesign using technologies such as Svelte, CMS, Django, Tailwind, and Bootstrap. We also ensured technical follow-up and maintenance of websites and web applications according to specific client requirements.",
+				"responsibilities": "To ensure effective project management, we adopted an agile approach using the Scrum methodology. This methodology allowed us to work iteratively and collaboratively, promoting transparent communication and continuous adaptation to evolving needs."
+			},
+			"company_url": "https://www.montauban-renovation.com/"
+		},
+		{
+			"company": "Montauban",
+			"position": "Intern",
+			"date": "February 2021 to March 2021",
+			"details": {
+				"description": "The aim of the project was to develop a comprehensive customer lifecycle and customer file management application. The agile Scrum methodology was adopted to achieve this goal. This approach allowed the project to be broken down into iterations called 'sprints', each focused on implementing specific features defined in collaboration with stakeholders.",
+				"responsibilities": "The development team worked closely with the product owner to prioritise features based on their business value. Tasks were assigned and tracked using agile project management tools, and retrospective sessions were integrated at the end of each sprint to analyse performance and identify areas for improvement.",
+				"conclusion": "This iterative and collaborative approach fostered transparent communication and constant adaptation to changing needs, ensuring a process of continuous improvement throughout the application development."
+			},
+			"company_url": "https://www.montauban-renovation.com/"
+		},
+		{
+			"company": "Simplon",
+			"position": "Learner",
+			"date": "October 2020 to July 2021",
+			"details": {
+				"description": "Learning basic languages like JavaScript, HTML, and CSS.",
+				"responsibilities": "Database design. Learning MCD and MLD.",
+				"conclusion": "Completion of several projects to improve general knowledge of the developer profession"
+			},
+			"company_url": "https://simplon.co/"
+		},
+		{
+			"company": "Patriarca",
+			"position": "Works Manager",
+			"date": "January 2019 to March 2020",
+			"details": {
+				"description": "Coordination of works carried out in one or more construction sites, ensuring quality, deadlines, and budget adherence.",
+				"responsibilities": "Technical, administrative, and financial monitoring of the construction site and subcontracting companies.",
+				"conclusion": "Study of the file and contracts, preparation of the operation, definition of needs, methods, human and material resources, planning of the operation"
+			},
+			"company_url": "http://www.patriarca.fr"
+		}
+	]
+}

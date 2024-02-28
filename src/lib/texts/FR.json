@@ -1,0 +1,86 @@
+{
+	"main": [
+		{
+			"intro": "Salut, je suis",
+			"name": "Joao Reis",
+			"job": "un ingénieur en développement logiciel",
+			"presentation": "spécialisé dans JavaScript. J'ai acquis une expertise en conception d'architectures robustes et en résolution de problèmes complexes. Passionné par la technologie, j'aime explorer de nouvelles technologies et partager mes connaissances avec la communauté des développeurs. Ouvert aux échanges et à la discussion sur les technologies émergentes, je suis toujours enthousiaste à l'idée de partager mes connaissances et d'apprendre des autres développeurs.",
+			"button": "Envoyer une message ..."
+		}
+	],
+	"me": [
+		{
+			"title": "Qui suis je?",
+			"presentation": [
+				{
+					"1": "Depuis quelques années, mon intérêt pour le développement web n'a cessé de croître. Cependant, c'est en 2020 que j'ai ressenti un appel irrépressible à changer de cap professionnel pour réaliser mon rêve ultime, me consacrer pleinement au développement de logiciels ! Avant d'embrasser cette passion, j'ai œuvré en tant que conducteur de travaux dans le secteur du bâtiment, puis j'ai occupé un poste dans le back-office d'une entreprise de communication."
+				},
+				{
+					"2": "Ces expériences m'ont apporté des compétences essentielles en gestion de clients et d'équipes, mais mon cœur était ailleurs, dans le monde du développement informatique."
+				},
+				{
+					"3": "En 2020, j'ai enfin décidé de suivre ma véritable passion et de contribuer activement à l'avancement de ce domaine fascinant. Durant ma formation, j'ai eu l'opportunité d'explorer des langages tels que <span class='text-green'>JavaScript</span>, <span class='text-green'>HTML</span>, <span class='text-green'>CSS</span>, <span class='text-green'>Mongodb</span>, <span class='text-green'>SQL</span> et <span class='text-green'>Python</span>. Rapidement, j'ai trouvé ma voie en me spécialisant dans des technologies telles que <span class='text-green'>JavaScript</span> et <span class='text-green'>Mongodb</span>."
+				},
+				{
+					"4": "Par ailleurs, j'ai complété ma formation en suivant des cours sur les bonnes pratiques de développement (Opquast) et sur les méthodologies agiles. Chaque jour, je m'investis avec passion et détermination dans le monde du développement de logiciels, désireux de continuer à apprendre et à contribuer à des projets innovants et stimulants."
+				}
+			]
+		}
+	],
+	"workplaces": [
+		{
+			"company": "Lectra",
+			"position": "Développeur logiciel en JavaScript",
+			"date": "Juin 2022 à Présent",
+			"details": {
+				"description": "En tant que Project Owner et développeur au sein d'une équipe Agile, je porte la responsabilité de l'implémentation et de l'intégration réussies du PLM de notre société dans les écosystèmes clients.",
+				"responsibilities": "En supervisant chaque aspect du projet, de l'analyse des besoins à la livraison finale, je veille à ce que les solutions personnalisées répondent pleinement aux attentes des clients. Mon rôle englobe également la coordination des efforts de développement et la garantie de la qualité du code et des fonctionnalités, tout en assurant une intégration fluide avec les systèmes existants des clients.",
+				"conclusion": "En somme, en tant que Project Owner, je m'engage à assurer le succès global du projet PLM, en maintenant une vision claire tout au long du processus, tout en contribuant activement au développement du PLM."
+			},
+			"company_url": "https://www.montauban-renovation.com/"
+		},
+		{
+			"company": "Noveoo",
+			"position": "Développeur Web / Fondateur",
+			"date": "Septembre 2021 à 2022",
+			"details": {
+				"description": "Notre société offrait des services comprenant la création de sites Vitrine, Ecommerce et sur mesure, ainsi que la refonte de sites en utilisant des technologies telles que Svelte, CMS, Django, Tailwind et Bootstrap. Nous assurions également le suivi technique et la maintenance des sites et applications web selon les exigences spécifiques de nos clients.",
+				"responsibilities": "Pour garantir une gestion efficace des projets, nous adoptions une approche agile avec la méthodologie Scrum. Cette méthodologie nous permettait de travailler de manière itérative et collaborative, favorisant ainsi une communication transparente et une adaptation continue aux besoins évolutifs."
+			},
+			"company_url": "https://www.montauban-renovation.com/"
+		},
+		{
+			"company": "Montauban",
+			"position": "Stagiaire",
+			"date": "Février 2021 à Mars 2021",
+			"details": {
+				"description": "Le projet visait à développer une application de gestion complète du cycle de vie des clients et des dossiers clients. Pour atteindre cet objectif, la méthodologie <span class=\"text-green'Scrum Agile</span> avait été adoptée. Cette approche avait permis de découper le projet en itérations appelées \"Sprints\", chacune concentrée sur la réalisation de fonctionnalités spécifiques définies en collaboration avec les parties prenantes.",
+				"responsibilities": "L'équipe de développement avait travaillé en étroite collaboration avec le product owner pour prioriser les fonctionnalités en fonction de leur valeur métier. Les tâches avaient été attribuées et suivies à travers des outils de gestion de projet agiles, et des sessions de rétrospective avaient été intégrées à la fin de chaque sprint pour analyser les performances et identifier les domaines d'amélioration.",
+				"conclusion": "Cette approche itérative et collaborative avait favorisé une communication transparente et une adaptation continue aux besoins changeants, assurant ainsi un processus d'amélioration continue tout au long du développement de l'application."
+			},
+			"company_url": "https://www.montauban-renovation.com/"
+		},
+		{
+			"company": "Simplon",
+			"position": "Apprenant",
+			"date": "Octobre 2020 à Juillet 2021",
+			"details": {
+				"description": "Apprentissage de langages de base comme JavaScript, HTML et CSS.",
+				"responsibilities": "Conception de bases de données. Apprentissage MCD et MLD.",
+				"conclusion": "Réalisation de plusieurs projets pour améliorer la connaissance générale du métier de développeur"
+			},
+			"company_url": "https://simplon.co/"
+		},
+		{
+			"company": "Patriarca",
+			"position": "Conducteur de travaux",
+			"date": "Janvier 2019 à Mars 2020",
+			"details": {
+				"description": "Coordination des travaux réalisés dans le cadre d’un ou plusieurs chantiers dans le respect de la qualité, des délais et du budget.",
+				"responsibilities": "Suivi technique, administratif et financier du chantier ainsi que des entreprises sous-traitantes.",
+				"conclusion": "Etude du dossier et des contrats, préparation de l'opération, définition des besoins, méthodes, moyens humains et matériels, planification de l'opération"
+			},
+			"company_url": "http://www.patriarca.fr"
+		}
+	]
+}

@@ -91,8 +91,8 @@ declare module '$env/static/private' {
 	export const npm_config_frozen_lockfile: string;
 	export const DISPLAY: string;
 	export const npm_package_scripts_test_unit: string;
-	export const VSCODE_INJECTION: string;
 	export const LANG: string;
+	export const VSCODE_INJECTION: string;
 	export const npm_package_devDependencies_eslint: string;
 	export const LS_COLORS: string;
 	export const TERM_PROGRAM: string;
@@ -223,8 +223,8 @@ declare module '$env/dynamic/private' {
 		npm_config_frozen_lockfile: string;
 		DISPLAY: string;
 		npm_package_scripts_test_unit: string;
-		VSCODE_INJECTION: string;
 		LANG: string;
+		VSCODE_INJECTION: string;
 		npm_package_devDependencies_eslint: string;
 		LS_COLORS: string;
 		TERM_PROGRAM: string;

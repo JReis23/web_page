@@ -1,41 +1,30 @@
-<script>
+<script lang="ts">
+import FR from '$lib/texts/FR.json';
+
+let text = FR.me[0];
 </script>
 
 <section id="me" class="me">
-	<h2 class="numbered-heading">Qui je suis ?</h2>
+	<h2 class="numbered-heading">{text.title}</h2>
 	<article>
 		<div>
 			<div class="about">
-				<p>
-					Mon intérêt pour le développement web a commencé il y a quelques années. Mais c’est en
-					2020 que j'ai décidé que c'était le bon moment pour changer de métier et essayer de
-					réaliser mon rêve de travailler dans le développement d'applications web !<br /><br
-					/>Avant d'être développeur web, j'ai été conducteur de travaux dans le bâtiment et j'ai
-					aussi travaillé pour le back-office d'une entreprise dans le domaine de la communication.
-					Les métiers que j'ai exercés ont fait de moi un professionnel ayant de l'expérience dans
-					la gestion des clients et des équipes.
-					<br /><br />Ma formation de développeur Web a eu lieu entre novembre 2020 et juillet 2021.
-					Pendant la formation, j'ai appris à travailler avec des langages comme
-					<span>JavaScript, HTML, CSS, SQL et Python</span> et peu après la formation, j'ai commencé
-					à travailler avec <span>React</span> et surtout <span>SVELTE</span> (utilisé pour la
-					réalisation du portfolio). Au cours de ma formation, j'ai également suivi une formation
-					<span>Opquast</span>
-					et une formation <span>Agile</span>. <br /><br />Voici quelques technologies avec
-					lesquelles j'ai travaillé récemment :
-				</p>
+				{#each text.presentation as item}
+					<p class="pb-2"></p>
+				{/each}
 			</div>
 			<div class="stack">
 				<ul>
-					<li>Svelte</li>
-					<li>Django</li>
-					<li>Python</li>
-					<li>Tailwind</li>
-				</ul>
-				<ul>
 					<li>JavaScript</li>
-					<li>Bootstrap</li>
+					<li>Mongodb</li>
 					<li>HTML</li>
 					<li>CSS</li>
+				</ul>
+				<ul>
+					<li>Svelte</li>
+					<li>SvelteKit</li>
+					<li>Python</li>
+					<li>Tailwind</li>
 				</ul>
 			</div>
 		</div>
@@ -48,11 +37,6 @@
 </section>
 
 <style>
-section {
-	display: flex;
-	flex-flow: column;
-	justify-content: center;
-}
 article {
 	display: flex;
 
@@ -74,7 +58,7 @@ ul {
 ul li {
 	&::before {
 		content: '▹';
-		color: var(--contrast-color);
+		color: hsl(var(--color-green));
 		margin-right: 1.175rem;
 	}
 }
@@ -87,7 +71,7 @@ picture {
 
 	&::before {
 		content: '';
-		border: 1px solid var(--contrast-color);
+		border: 1px solid hsl(var(--color-green));
 		position: absolute;
 		top: 10px;
 		left: 10px;
@@ -99,7 +83,7 @@ picture {
 
 	&::after {
 		content: '';
-		background: var(--contrast-color-transparent);
+		background: hsl(166deg 100% 70% / 20%);
 		position: absolute;
 		display: block;
 		width: 100%;

@@ -1,24 +1,24 @@
 <script lang="ts">
 import Button from '../ui/Button.svelte';
+import FR from '$lib/texts/FR.json';
+
+let text = FR.main[0];
+
 export let openModal: () => void;
 </script>
 
 <section id="index">
-	<h2>Salut, je m'appelle</h2>
-	<h1>João Reis</h1>
-	<h3>et je suis développeur Web.</h3>
+	<h2>{text.intro}</h2>
+	<h1>{text.name}</h1>
+	<h3>{text.job}</h3>
 	<p>
-		Je suis un développeur web spécialisé dans la création du front-end de tout site web, je
-		développe également des applications back-end à intégrer aux solutions front-end que je crée.
-		Après avoir obtenu mon diplôme, <span
-			>je suis maintenant à la recherche d'un poste de développeur Web.</span
-		>
+		{text.presentation}
 	</p>
 	<div class="pt-8">
 		<Button
 			on:click={openModal}
 			className="primary border-2 border-green p-3 text-sm rounded w-fit text-green trasition duration-500"
-			>Envoyer une message ...
+			>{text.button}
 		</Button>
 	</div>
 </section>
