@@ -27,7 +27,7 @@ function scrollIntoView({ target }) {
 		<div class="logo w-14">
 			<img src="/img/vectorpaint.svg" alt="logo joao reis" />
 		</div>
-		<ol class="flex">
+		<ol class="flex items-center">
 			<li class="pr-8">
 				<a
 					class="transition duration-300 hover:text-green"
@@ -46,6 +46,13 @@ function scrollIntoView({ target }) {
 					Expérience</a
 				>
 			</li>
+			<div class="pr-2">
+				<select name="" id="" class="rounded-full border-none bg-navy text-green focus:ring-green">
+					<option value="fr">fr</option>
+					<option value="en">en</option>
+					<option value="pt">pt</option>
+				</select>
+			</div>
 		</ol>
 	</nav>
 </header>
@@ -58,7 +65,7 @@ li {
 a {
 	&::before {
 		content: '0' counter(item) '. ';
-		color: theme('colors.green');
+		color: hsl(var(--color-green));
 	}
 }
 </style>

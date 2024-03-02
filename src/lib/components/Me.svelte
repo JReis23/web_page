@@ -1,16 +1,16 @@
 <script lang="ts">
 import FR from '$lib/texts/FR.json';
 
-let text = FR.me[0];
+let info = FR.me[0];
 </script>
 
 <section id="me" class="me">
-	<h2 class="numbered-heading">{text.title}</h2>
+	<h2 class="numbered-heading">{info.title}</h2>
 	<article>
 		<div>
 			<div class="about">
-				{#each text.presentation as item}
-					<p class="pb-2"></p>
+				{#each info.presentation as { id, text }}
+					<p class="pb-2">{text}</p>
 				{/each}
 			</div>
 			<div class="stack">

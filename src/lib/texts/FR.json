@@ -13,16 +13,20 @@
 			"title": "Qui suis je?",
 			"presentation": [
 				{
-					"1": "Depuis quelques années, mon intérêt pour le développement web n'a cessé de croître. Cependant, c'est en 2020 que j'ai ressenti un appel irrépressible à changer de cap professionnel pour réaliser mon rêve ultime, me consacrer pleinement au développement de logiciels ! Avant d'embrasser cette passion, j'ai œuvré en tant que conducteur de travaux dans le secteur du bâtiment, puis j'ai occupé un poste dans le back-office d'une entreprise de communication."
+					"id": "1",
+					"text": "Depuis quelques années, mon intérêt pour le développement web n'a cessé de croître. Cependant, c'est en 2020 que j'ai ressenti un appel irrépressible à changer de cap professionnel pour réaliser mon rêve ultime, me consacrer pleinement au développement de logiciels ! Avant d'embrasser cette passion, j'ai œuvré en tant que conducteur de travaux dans le secteur du bâtiment, puis j'ai occupé un poste dans le back-office d'une entreprise de communication."
 				},
 				{
-					"2": "Ces expériences m'ont apporté des compétences essentielles en gestion de clients et d'équipes, mais mon cœur était ailleurs, dans le monde du développement informatique."
+					"id": "2",
+					"text": "Ces expériences m'ont apporté des compétences essentielles en gestion de clients et d'équipes, mais mon cœur était ailleurs, dans le monde du développement informatique."
 				},
 				{
-					"3": "En 2020, j'ai enfin décidé de suivre ma véritable passion et de contribuer activement à l'avancement de ce domaine fascinant. Durant ma formation, j'ai eu l'opportunité d'explorer des langages tels que <span class='text-green'>JavaScript</span>, <span class='text-green'>HTML</span>, <span class='text-green'>CSS</span>, <span class='text-green'>Mongodb</span>, <span class='text-green'>SQL</span> et <span class='text-green'>Python</span>. Rapidement, j'ai trouvé ma voie en me spécialisant dans des technologies telles que <span class='text-green'>JavaScript</span> et <span class='text-green'>Mongodb</span>."
+					"id": "3",
+					"text": "En 2020, j'ai enfin décidé de suivre ma véritable passion et de contribuer activement à l'avancement de ce domaine fascinant. Durant ma formation, j'ai eu l'opportunité d'explorer des langages tels que JavaScript, HTML, CSS, Mongodb, SQL et Python. Rapidement, j'ai trouvé ma voie en me spécialisant dans des technologies telles que JavaScript et Mongodb."
 				},
 				{
-					"4": "Par ailleurs, j'ai complété ma formation en suivant des cours sur les bonnes pratiques de développement (Opquast) et sur les méthodologies agiles. Chaque jour, je m'investis avec passion et détermination dans le monde du développement de logiciels, désireux de continuer à apprendre et à contribuer à des projets innovants et stimulants."
+					"id": "4",
+					"text": "Par ailleurs, j'ai complété ma formation en suivant des cours sur les bonnes pratiques de développement (Opquast) et sur les méthodologies agiles. Chaque jour, je m'investis avec passion et détermination dans le monde du développement de logiciels, désireux de continuer à apprendre et à contribuer à des projets innovants et stimulants."
 				}
 			]
 		}
