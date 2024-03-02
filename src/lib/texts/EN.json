@@ -1,4 +1,37 @@
 {
+	"main": [
+		{
+			"intro": "Hi, I'm",
+			"name": "Joao Reis",
+			"job": "a software development engineer",
+			"presentation": "specialized in JavaScript. I have expertise in designing robust architectures and solving complex problems. Passionate about technology, I enjoy exploring new technologies and sharing my knowledge with the developer community. Open to discussions and exchanges on emerging technologies, I am always enthusiastic about sharing my knowledge and learning from other developers.",
+			"button": "Send a message ..."
+		}
+	],
+	"me": [
+		{
+			"title": "Who am I?",
+			"presentation": [
+				{
+					"id": "1",
+					"text": "For several years, my interest in software development has continued to grow. However, it was in 2020 that I felt an irresistible urge to change my professional path to fulfill my ultimate dream, to fully dedicate myself to software development! Before embracing this passion, I worked as a works manager in the construction sector, and then held a position in the back office of a communication company."
+				},
+				{
+					"id": "2",
+					"text": "These experiences have provided me with essential skills in client and team management, but my heart was elsewhere, in the world of computer development."
+				},
+				{
+					"id": "3",
+					"text": "In 2020, I finally decided to follow my true passion and actively contribute to the advancement of this fascinating field. During my training, I had the opportunity to explore languages ​​such as JavaScript, HTML, CSS, Mongodb, SQL, and Python. Quickly, I found my way by specializing in technologies such as JavaScript and Mongodb."
+				},
+				{
+					"id": "4",
+					"text": "Furthermore, I completed my training by taking courses on good development practices (Opquast) and agile methodologies. Every day, I invest with passion and determination in the world of software development, eager to continue learning and contributing to innovative and challenging projects."
+				}
+			]
+		}
+	],
+
 	"workplaces": [
 		{
 			"company": "Lectra",

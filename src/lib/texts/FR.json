@@ -14,7 +14,7 @@
 			"presentation": [
 				{
 					"id": "1",
-					"text": "Depuis quelques années, mon intérêt pour le développement web n'a cessé de croître. Cependant, c'est en 2020 que j'ai ressenti un appel irrépressible à changer de cap professionnel pour réaliser mon rêve ultime, me consacrer pleinement au développement de logiciels ! Avant d'embrasser cette passion, j'ai œuvré en tant que conducteur de travaux dans le secteur du bâtiment, puis j'ai occupé un poste dans le back-office d'une entreprise de communication."
+					"text": "Depuis quelques années, mon intérêt pour le développement de logiciels n'a cessé de croître. Cependant, c'est en 2020 que j'ai ressenti un appel irrépressible à changer de cap professionnel pour réaliser mon rêve ultime, me consacrer pleinement au développement de logiciels ! Avant d'embrasser cette passion, j'ai œuvré en tant que conducteur de travaux dans le secteur du bâtiment, puis j'ai occupé un poste dans le back-office d'une entreprise de communication."
 				},
 				{
 					"id": "2",
@@ -58,7 +58,7 @@
 			"position": "Stagiaire",
 			"date": "Février 2021 à Mars 2021",
 			"details": {
-				"description": "Le projet visait à développer une application de gestion complète du cycle de vie des clients et des dossiers clients. Pour atteindre cet objectif, la méthodologie <span class=\"text-green'Scrum Agile</span> avait été adoptée. Cette approche avait permis de découper le projet en itérations appelées \"Sprints\", chacune concentrée sur la réalisation de fonctionnalités spécifiques définies en collaboration avec les parties prenantes.",
+				"description": "Le projet visait à développer une application de gestion complète du cycle de vie des clients et des dossiers clients. Pour atteindre cet objectif, la méthodologie Scrum Agile avait été adoptée. Cette approche avait permis de découper le projet en itérations appelées \"Sprints\", chacune concentrée sur la réalisation de fonctionnalités spécifiques définies en collaboration avec les parties prenantes.",
 				"responsibilities": "L'équipe de développement avait travaillé en étroite collaboration avec le product owner pour prioriser les fonctionnalités en fonction de leur valeur métier. Les tâches avaient été attribuées et suivies à travers des outils de gestion de projet agiles, et des sessions de rétrospective avaient été intégrées à la fin de chaque sprint pour analyser les performances et identifier les domaines d'amélioration.",
 				"conclusion": "Cette approche itérative et collaborative avait favorisé une communication transparente et une adaptation continue aux besoins changeants, assurant ainsi un processus d'amélioration continue tout au long du développement de l'application."
 			},

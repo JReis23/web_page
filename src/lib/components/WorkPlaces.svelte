@@ -1,7 +1,31 @@
 <script lang="ts">
 import Button from '$lib/ui/Button.svelte';
+import { lang } from '$lib/stores/lang';
 import FR from '$lib/texts/FR.json';
 import EN from '$lib/texts/EN.json';
+
+interface Info {
+	company: string;
+	position: string;
+	date: string;
+	company_url: string;
+	details: {
+		description: string;
+		responsibilities: string;
+		conclusion?: string; // Ajouter conclusion comme optionnel
+	};
+}
+
+let info: Info[];
+
+lang.subscribe((value) => {
+	console.log({ value });
+	if (value === 'fr') {
+		info = FR.workplaces;
+	} else if (value === 'en') {
+		info = EN.workplaces;
+	}
+});
 
 let societyButton: string | null = 'Lectra';
 const handleSociety =
@@ -17,7 +41,7 @@ let className = 'border-l-2 hover:border-green primary hover:text-green p-2 text
 	<h2 class="numbered-heading">Expérience</h2>
 	<div class="container flex pt-6">
 		<div class="flex flex-col pr-10">
-			{#each EN.workplaces as item}
+			{#each info as item}
 				<Button
 					on:click={handleSociety(item.company)}
 					active={societyButton === item.company ? 'active' : ''}
@@ -27,7 +51,7 @@ let className = 'border-l-2 hover:border-green primary hover:text-green p-2 text
 		</div>
 		<div class="container">
 			<!-- content here -->
-			{#each EN.workplaces as item}
+			{#each info as item}
 				{#if societyButton === item.company}
 					<div>
 						<h3>

@@ -1,6 +1,11 @@
-<script>
+<script lang="ts">
 // import Button from '../ui/Button.svelte';
 // import { openNav } from '../stores/OpenNav';
+import { lang } from '$lib/stores/lang';
+
+function handleLang(e: MouseEvent) {
+	lang.set((e.target as HTMLSelectElement).value);
+}
 
 let y = 0;
 let onMove = 'scrolled';
@@ -47,7 +52,12 @@ function scrollIntoView({ target }) {
 				>
 			</li>
 			<div class="pr-2">
-				<select name="" id="" class="rounded-full border-none bg-navy text-green focus:ring-green">
+				<select
+					name=""
+					id=""
+					class="rounded-full border-none bg-navy text-green focus:ring-green"
+					on:change={handleLang}
+				>
 					<option value="fr">fr</option>
 					<option value="en">en</option>
 					<option value="pt">pt</option>

@@ -1,7 +1,22 @@
 <script lang="ts">
+import { lang } from '$lib/stores/lang';
 import FR from '$lib/texts/FR.json';
+import EN from '$lib/texts/EN.json';
 
-let info = FR.me[0];
+interface Info {
+	title: string;
+	presentation: { id: string; text: string }[];
+}
+
+let info: Info;
+
+lang.subscribe((value) => {
+	if (value === 'fr') {
+		info = FR.me[0];
+	} else if (value === 'en') {
+		info = EN.me[0];
+	}
+});
 </script>
 
 <section id="me" class="me">
