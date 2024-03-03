@@ -2,9 +2,29 @@
 // import Button from '../ui/Button.svelte';
 // import { openNav } from '../stores/OpenNav';
 import { lang } from '$lib/stores/lang';
+import FR from '$lib/texts/FR.json';
+import EN from '$lib/texts/EN.json';
 
-function handleLang(e: MouseEvent) {
-	lang.set((e.target as HTMLSelectElement).value);
+interface Nav {
+	me: string;
+	experience: string;
+}
+
+let nav: Nav[];
+
+lang.subscribe((value) => {
+	if (value === 'fr') {
+		nav = FR.nav;
+	} else if (value === 'en') {
+		nav = EN.nav;
+	} else {
+		nav = EN.nav;
+	}
+});
+
+function handleLang(event: Event) {
+	const selectedValue = (event.target as HTMLSelectElement).value;
+	lang.set(selectedValue);
 }
 
 let y = 0;
@@ -39,7 +59,7 @@ function scrollIntoView({ target }) {
 					href="#me"
 					on:click|preventDefault={scrollIntoView}
 				>
-					Moi</a
+					{nav[0].me}</a
 				>
 			</li>
 			<li class="pr-8">
@@ -48,7 +68,7 @@ function scrollIntoView({ target }) {
 					href="#experience"
 					on:click|preventDefault={scrollIntoView}
 				>
-					Expérience</a
+					{nav[0].experience}</a
 				>
 			</li>
 			<div class="pr-2">

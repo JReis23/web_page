@@ -15,7 +15,6 @@ interface Info {
 let info: Info;
 
 lang.subscribe((value) => {
-	console.log({ value });
 	if (value === 'fr') {
 		info = FR.main[0];
 	} else if (value === 'en') {

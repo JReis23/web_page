@@ -15,6 +15,8 @@ lang.subscribe((value) => {
 		info = FR.me[0];
 	} else if (value === 'en') {
 		info = EN.me[0];
+	} else {
+		info = EN.me[0];
 	}
 });
 </script>

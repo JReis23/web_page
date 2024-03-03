@@ -3,6 +3,31 @@
 import { fade } from 'svelte/transition';
 import Button from '$lib/ui/Button.svelte';
 import CloseButton from '$lib/ui/CloseButton.svelte';
+import { lang } from '$lib/stores/lang';
+import FR from '$lib/texts/FR.json';
+import EN from '$lib/texts/EN.json';
+
+interface Contact {
+	form: {
+		name: string;
+		email: string;
+		message: string;
+		button: string;
+	};
+}
+
+let contact: Contact[];
+
+lang.subscribe((value) => {
+	if (value === 'fr') {
+		contact = FR.message;
+	} else if (value === 'en') {
+		contact = EN.message;
+	} else {
+		contact = EN.message;
+	}
+});
+
 export let form, errors, enhance: any, message;
 
 export let closeModal: () => void;
@@ -11,22 +36,27 @@ export let closeModal: () => void;
 <CloseButton color={'stroke-slate'} closeModal={closeModal} className={'absolute top-2 right-2'} />
 <form class="flex w-3/4 min-w-72 max-w-full flex-col" action="/" method="POST" use:enhance>
 	<label class="flex flex-col py-2 text-green" for="email">
-		<span>Email</span>
-		<input type="email" placeholder="Email" name="email" bind:value={$form.email} />
+		<span> {contact[0].form.email}</span>
+		<input type="email" placeholder={contact[0].form.email} name="email" bind:value={$form.email} />
 		{#if $errors?.email}
 			<span class="">{$errors.email}</span>
 		{/if}
 	</label>
 	<label class="flex flex-col py-2 text-green" for="name">
-		<span>Name</span>
-		<input type="text" placeholder="Name" name="name" bind:value={$form.name} />
+		<span>{contact[0].form.name}</span>
+		<input type="text" placeholder={contact[0].form.name} name="name" bind:value={$form.name} />
 		{#if $errors?.name}
 			<span class="">{$errors.name}</span>
 		{/if}
 	</label>
 	<label class="flex flex-col py-2 text-green" for="message">
-		<span>Message</span>
-		<textarea placeholder="Message" name="message" rows="4" bind:value={$form.message} />
+		<span>{contact[0].form.message}</span>
+		<textarea
+			placeholder={contact[0].form.message}
+			name="message"
+			rows="4"
+			bind:value={$form.message}
+		/>
 		{#if $errors?.message}
 			<span class="">{$errors.message}</span>
 		{/if}

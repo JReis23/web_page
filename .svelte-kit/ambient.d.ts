@@ -27,7 +27,6 @@
  */
 declare module '$env/static/private' {
 	export const GJS_DEBUG_TOPICS: string;
-	export const LESSOPEN: string;
 	export const npm_package_devDependencies__types_node: string;
 	export const npm_package_devDependencies_sveltekit_superforms: string;
 	export const npm_package_devDependencies_vitest: string;
@@ -55,8 +54,8 @@ declare module '$env/static/private' {
 	export const LSCOLORS: string;
 	export const GTK_MODULES: string;
 	export const XDG_SEAT_PATH: string;
-	export const VSCODE_GIT_ASKPASS_MAIN: string;
 	export const PAGER: string;
+	export const VSCODE_GIT_ASKPASS_MAIN: string;
 	export const npm_package_devDependencies_svelte_check: string;
 	export const VSCODE_GIT_ASKPASS_NODE: string;
 	export const npm_package_scripts_check: string;
@@ -77,8 +76,8 @@ declare module '$env/static/private' {
 	export const npm_package_devDependencies_zod: string;
 	export const LOGNAME: string;
 	export const npm_package_type: string;
-	export const _: string;
 	export const _P9K_SSH_TTY: string;
+	export const _: string;
 	export const npm_package_private: string;
 	export const npm_package_scripts_check_watch: string;
 	export const npm_package_devDependencies_autoprefixer: string;
@@ -131,7 +130,6 @@ declare module '$env/static/private' {
 	export const npm_package_scripts_build: string;
 	export const npm_package_devDependencies_svelte: string;
 	export const npm_package_devDependencies_tslib: string;
-	export const LESSCLOSE: string;
 	export const GPG_AGENT_INFO: string;
 	export const GJS_DEBUG_OUTPUT: string;
 	export const P9K_SSH: string;
@@ -186,7 +184,6 @@ declare module '$env/static/public' {
 declare module '$env/dynamic/private' {
 	export const env: {
 		GJS_DEBUG_TOPICS: string;
-		LESSOPEN: string;
 		npm_package_devDependencies__types_node: string;
 		npm_package_devDependencies_sveltekit_superforms: string;
 		npm_package_devDependencies_vitest: string;
@@ -214,8 +211,8 @@ declare module '$env/dynamic/private' {
 		LSCOLORS: string;
 		GTK_MODULES: string;
 		XDG_SEAT_PATH: string;
-		VSCODE_GIT_ASKPASS_MAIN: string;
 		PAGER: string;
+		VSCODE_GIT_ASKPASS_MAIN: string;
 		npm_package_devDependencies_svelte_check: string;
 		VSCODE_GIT_ASKPASS_NODE: string;
 		npm_package_scripts_check: string;
@@ -236,8 +233,8 @@ declare module '$env/dynamic/private' {
 		npm_package_devDependencies_zod: string;
 		LOGNAME: string;
 		npm_package_type: string;
-		_: string;
 		_P9K_SSH_TTY: string;
+		_: string;
 		npm_package_private: string;
 		npm_package_scripts_check_watch: string;
 		npm_package_devDependencies_autoprefixer: string;
@@ -290,7 +287,6 @@ declare module '$env/dynamic/private' {
 		npm_package_scripts_build: string;
 		npm_package_devDependencies_svelte: string;
 		npm_package_devDependencies_tslib: string;
-		LESSCLOSE: string;
 		GPG_AGENT_INFO: string;
 		GJS_DEBUG_OUTPUT: string;
 		P9K_SSH: string;

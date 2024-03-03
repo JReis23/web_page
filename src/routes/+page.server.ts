@@ -16,8 +16,6 @@ export const actions: Actions = {
 		// const data = await request.formData();
 		const form = await superValidate(request, zod(userSchema));
 
-		console.log({ form });
-
 		if (!form.valid) {
 			return fail(400, {
 				form
@@ -33,15 +31,12 @@ export const actions: Actions = {
 				const currentDate: Date = new Date();
 				const obj = { ...form.data };
 
-				console.log(obj);
-
 				const contacts = await contactCollection
 					.find({}, { projection: { email: 1, contact_name: 1 } })
 					.toArray();
 				const emails = contacts.map((item) => item.email);
 				if (emails.includes(obj.email)) {
 					const existingContact = contacts.find((contact) => contact.email === obj.email);
-					console.log({ existingContact });
 					if (existingContact && existingContact.contact_name.name !== obj.name) {
 						await contactCollection.updateOne(
 							{ email: obj.email }, // Filter by email
