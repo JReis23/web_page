@@ -38,7 +38,7 @@ $: y;
 
 console.log(y);
 
-function scrollIntoView({ target }) {
+function scrollIntoView({ target }: any) {
 	const el = document.querySelector(target.getAttribute('href'));
 	if (!el) return;
 	el.scrollIntoView({

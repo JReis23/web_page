@@ -5,7 +5,7 @@ import { message, superValidate } from 'sveltekit-superforms/server';
 import { zod } from 'sveltekit-superforms/adapters';
 import { fail } from '@sveltejs/kit';
 
-export const load: PageServerLoad = async ({ params }) => {
+export const load: PageServerLoad = async () => {
 	const form = await superValidate(zod(userSchema));
 
 	return { form };
