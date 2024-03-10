@@ -1,5 +1,4 @@
 import forms from '@tailwindcss/forms';
-import { join } from 'path';
 
 /** @type {import('tailwindcss').Config} */
 export default {

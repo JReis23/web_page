@@ -12,7 +12,10 @@
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write .",
 		"test:integration": "playwright test",
-		"test:unit": "vitest"
+		"test:unit": "vitest",
+		"studio": "drizzle-kit studio --config drizzle.config.ts",
+		"generate": "drizzle-kit generate:pg --config drizzle.config.ts",
+		"migrate": "drizzle-kit push:pg --config drizzle.config.ts"
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.28.1",
@@ -25,9 +28,12 @@
 		"@typescript-eslint/eslint-plugin": "^7.0.0",
 		"@typescript-eslint/parser": "^7.0.0",
 		"autoprefixer": "^10.4.17",
+		"dotenv": "^16.4.5",
+		"drizzle-kit": "^0.20.14",
 		"eslint": "^8.56.0",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte": "^2.35.1",
+		"pg": "^8.11.3",
 		"postcss": "^8.4.35",
 		"prettier": "^3.2.5",
 		"prettier-plugin-svelte": "^3.1.2",
@@ -44,6 +50,8 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"mongodb": "^6.3.0"
+		"drizzle-orm": "^0.30.1",
+		"mongodb": "^6.3.0",
+		"postgres": "^3.4.3"
 	}
 }

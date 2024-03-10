@@ -26,6 +26,7 @@
  * ```
  */
 declare module '$env/static/private' {
+	export const DATABASE_URL: string;
 	export const GJS_DEBUG_TOPICS: string;
 	export const npm_package_devDependencies__types_node: string;
 	export const npm_package_devDependencies_sveltekit_superforms: string;
@@ -52,6 +53,7 @@ declare module '$env/static/private' {
 	export const GIO_LAUNCHED_DESKTOP_FILE: string;
 	export const ZSH: string;
 	export const LSCOLORS: string;
+	export const npm_package_dependencies_postgres: string;
 	export const GTK_MODULES: string;
 	export const XDG_SEAT_PATH: string;
 	export const PAGER: string;
@@ -59,12 +61,14 @@ declare module '$env/static/private' {
 	export const npm_package_devDependencies_svelte_check: string;
 	export const VSCODE_GIT_ASKPASS_NODE: string;
 	export const npm_package_scripts_check: string;
+	export const npm_package_dependencies_drizzle_orm: string;
 	export const DBUS_SESSION_BUS_ADDRESS: string;
 	export const CINNAMON_VERSION: string;
 	export const P9K_TTY: string;
 	export const npm_config_engine_strict: string;
 	export const GIO_LAUNCHED_DESKTOP_FILE_PID: string;
 	export const COLORTERM: string;
+	export const npm_package_scripts_db_generate: string;
 	export const npm_package_devDependencies__tailwindcss_forms: string;
 	export const npm_package_devDependencies_tailwindcss: string;
 	export const npm_package_devDependencies_typescript: string;
@@ -89,6 +93,7 @@ declare module '$env/static/private' {
 	export const npm_config_registry: string;
 	export const XDG_SESSION_ID: string;
 	export const TERM: string;
+	export const npm_package_devDependencies_drizzle_kit: string;
 	export const GNOME_DESKTOP_SESSION_ID: string;
 	export const npm_package_dependencies_mongodb: string;
 	export const npm_package_devDependencies_prettier_plugin_tailwindcss: string;
@@ -128,11 +133,13 @@ declare module '$env/static/private' {
 	export const QT_ACCESSIBILITY: string;
 	export const GDMSESSION: string;
 	export const npm_package_scripts_build: string;
+	export const npm_package_scripts_db_studio: string;
 	export const npm_package_devDependencies_svelte: string;
 	export const npm_package_devDependencies_tslib: string;
 	export const GPG_AGENT_INFO: string;
 	export const GJS_DEBUG_OUTPUT: string;
 	export const P9K_SSH: string;
+	export const npm_package_scripts_db_migrate: string;
 	export const XDG_VTNR: string;
 	export const VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 	export const VSCODE_NONCE: string;
@@ -183,6 +190,7 @@ declare module '$env/static/public' {
  */
 declare module '$env/dynamic/private' {
 	export const env: {
+		DATABASE_URL: string;
 		GJS_DEBUG_TOPICS: string;
 		npm_package_devDependencies__types_node: string;
 		npm_package_devDependencies_sveltekit_superforms: string;
@@ -209,6 +217,7 @@ declare module '$env/dynamic/private' {
 		GIO_LAUNCHED_DESKTOP_FILE: string;
 		ZSH: string;
 		LSCOLORS: string;
+		npm_package_dependencies_postgres: string;
 		GTK_MODULES: string;
 		XDG_SEAT_PATH: string;
 		PAGER: string;
@@ -216,12 +225,14 @@ declare module '$env/dynamic/private' {
 		npm_package_devDependencies_svelte_check: string;
 		VSCODE_GIT_ASKPASS_NODE: string;
 		npm_package_scripts_check: string;
+		npm_package_dependencies_drizzle_orm: string;
 		DBUS_SESSION_BUS_ADDRESS: string;
 		CINNAMON_VERSION: string;
 		P9K_TTY: string;
 		npm_config_engine_strict: string;
 		GIO_LAUNCHED_DESKTOP_FILE_PID: string;
 		COLORTERM: string;
+		npm_package_scripts_db_generate: string;
 		npm_package_devDependencies__tailwindcss_forms: string;
 		npm_package_devDependencies_tailwindcss: string;
 		npm_package_devDependencies_typescript: string;
@@ -246,6 +257,7 @@ declare module '$env/dynamic/private' {
 		npm_config_registry: string;
 		XDG_SESSION_ID: string;
 		TERM: string;
+		npm_package_devDependencies_drizzle_kit: string;
 		GNOME_DESKTOP_SESSION_ID: string;
 		npm_package_dependencies_mongodb: string;
 		npm_package_devDependencies_prettier_plugin_tailwindcss: string;
@@ -285,11 +297,13 @@ declare module '$env/dynamic/private' {
 		QT_ACCESSIBILITY: string;
 		GDMSESSION: string;
 		npm_package_scripts_build: string;
+		npm_package_scripts_db_studio: string;
 		npm_package_devDependencies_svelte: string;
 		npm_package_devDependencies_tslib: string;
 		GPG_AGENT_INFO: string;
 		GJS_DEBUG_OUTPUT: string;
 		P9K_SSH: string;
+		npm_package_scripts_db_migrate: string;
 		XDG_VTNR: string;
 		VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 		VSCODE_NONCE: string;

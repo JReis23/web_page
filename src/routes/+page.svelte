@@ -13,6 +13,8 @@ let isOpen = false;
 
 const { form, enhance, errors, message, reset } = superForm(data.form);
 
+console.log({ data });
+
 function openModal() {
 	isOpen = true;
 }

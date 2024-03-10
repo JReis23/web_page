@@ -1,0 +1,27 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1710016376478,
+      "tag": "0000_warm_old_lace",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1710024557173,
+      "tag": "0001_thankful_shockwave",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1710026344441,
+      "tag": "0002_even_jamie_braddock",
+      "breakpoints": true
+    }
+  ]
+}

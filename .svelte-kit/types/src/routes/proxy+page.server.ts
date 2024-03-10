@@ -1,5 +1,7 @@
 // @ts-nocheck
-import { getMongoClient } from '$lib/db/mogodb';
+// import { getMongoClient } from '$lib/db/mogodb';
+import { db } from '$lib/db/db.sever';
+import { messagesTable, usersTable } from '$lib/db/schema';
 import type { PageServerLoad, Actions } from './$types';
 import { userSchema } from '$lib/formValidations/formValidator';
 import { message, superValidate } from 'sveltekit-superforms/server';
@@ -14,7 +16,6 @@ export const load = async () => {
 
 export const actions = {
 	default: async ({ request }: import('./$types').RequestEvent) => {
-		// const data = await request.formData();
 		const form = await superValidate(request, zod(userSchema));
 
 		if (!form.valid) {
@@ -24,43 +25,25 @@ export const actions = {
 		}
 
 		try {
-			const client = await getMongoClient();
-			const db = client.db('portfolio');
-			const contactCollection = db.collection('contact');
+			const findUser = await db.query.usersTable.findFirst({
+				where: (email, { eq }) => eq(usersTable.email, form.data.email)
+			});
 
-			if (form.data) {
-				const currentDate: Date = new Date();
-				const obj = { ...form.data };
+			if (!findUser) {
+				const insertUser: { id: number }[] = await db
+					.insert(usersTable)
+					.values({ name: form.data.name, email: form.data.email })
+					.returning({ id: usersTable.id });
 
-				const contacts = await contactCollection
-					.find({}, { projection: { email: 1, contact_name: 1 } })
-					.toArray();
-				const emails = contacts.map((item) => item.email);
-				if (emails.includes(obj.email)) {
-					const existingContact = contacts.find((contact) => contact.email === obj.email);
-					if (existingContact && existingContact.contact_name.name !== obj.name) {
-						await contactCollection.updateOne(
-							{ email: obj.email }, // Filter by email
-							{
-								$set: { contact_name: { name: obj.name, updatedAt: currentDate } }, // Update the name field and updatedAt if name is different
-								$push: { messages: { message: obj.message, insertAt: currentDate } } // Push a new message to the messages array
-							}
-						);
-					} else {
-						await contactCollection.updateOne(
-							{ email: obj.email }, // Filter by email
-							{
-								$push: { messages: { message: obj.message, insertAt: currentDate } } // Push a new message to the messages array without changing name and updatedAt
-							}
-						);
-					}
-				} else {
-					await contactCollection.insertOne({
-						email: obj.email,
-						contact_name: { name: obj.name, updatedAt: currentDate },
-						messages: [{ message: obj.message, insertAt: currentDate }]
-					});
-				}
+				await db.insert(messagesTable).values({
+					message: form.data.message,
+					userId: insertUser[0].id
+				});
+			} else {
+				await db.insert(messagesTable).values({
+					message: form.data.message,
+					userId: findUser.id
+				});
 			}
 			return message(form, 'Message envoyée');
 		} catch (e) {
