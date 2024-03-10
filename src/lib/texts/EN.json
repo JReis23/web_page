@@ -9,10 +9,19 @@
 		{
 			"form": {
 				"name": "Name",
+				"nameRequired": "Name is required",
+				"nameMinLength": "Name must be at least 2 characters",
 				"email": "Email",
+				"emailRequired": "Email is required",
+				"emailInvalid": "Email is invalid",
 				"message": "Message",
+				"messageRequired": "Message is required",
+				"messageMinLength": "Message must be at least 5 characters",
+				"messageMaxLength": "Message must be at most 255 characters",
 				"button": "Send"
-			}
+			},
+			"success": "Your message has been sent successfully!",
+			"error": "An error occurred while sending your message. Please try again later."
 		}
 	],
 	"main": [

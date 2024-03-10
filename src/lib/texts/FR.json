@@ -9,8 +9,15 @@
 		{
 			"form": {
 				"name": "Nom",
-				"email": "Email",
+				"nameRequired": "Le nom est requis",
+				"nameMinLength": "Le nom doit contenir au moins 2 caractères",
+				"email": "E-mail",
+				"emailRequired": "L'adresse e-mail est requise",
+				"emailInvalid": "L'adresse e-mail est invalide",
 				"message": "Message",
+				"messageRequired": "Le message est requis",
+				"messageMinLength": "Le message doit contenir au moins 5 caractères",
+				"messageMaxLength": "Le message ne doit pas dépasser 255 caractères",
 				"button": "Envoyer"
 			}
 		}
