@@ -86,6 +86,7 @@ declare module '$env/static/private' {
 	export const _: string;
 	export const npm_package_private: string;
 	export const npm_package_scripts_check_watch: string;
+	export const npm_package_devDependencies__sveltejs_adapter_node: string;
 	export const npm_package_devDependencies_autoprefixer: string;
 	export const XDG_SESSION_CLASS: string;
 	export const DEFAULTS_PATH: string;
@@ -252,6 +253,7 @@ declare module '$env/dynamic/private' {
 		_: string;
 		npm_package_private: string;
 		npm_package_scripts_check_watch: string;
+		npm_package_devDependencies__sveltejs_adapter_node: string;
 		npm_package_devDependencies_autoprefixer: string;
 		XDG_SESSION_CLASS: string;
 		DEFAULTS_PATH: string;
