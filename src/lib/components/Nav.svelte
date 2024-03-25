@@ -1,6 +1,4 @@
 <script lang="ts">
-// import Button from '../ui/Button.svelte';
-// import { openNav } from '../stores/OpenNav';
 import { lang } from '$lib/stores/lang';
 import FR from '$lib/texts/FR.json';
 import EN from '$lib/texts/EN.json';
@@ -26,17 +24,6 @@ function handleLang(event: Event) {
 	const selectedValue = (event.target as HTMLSelectElement).value;
 	lang.set(selectedValue);
 }
-
-let y = 0;
-let onMove = 'scrolled';
-
-// const handle = () => {
-// 	$openNav = !$openNav;
-// };
-
-$: y;
-
-console.log(y);
 
 function scrollIntoView({ target }: any) {
 	const el = document.querySelector(target.getAttribute('href'));

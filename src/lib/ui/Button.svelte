@@ -57,9 +57,6 @@ export let className: ButtonProps['className'] = '';
 .active {
 	border-left-color: hsl(166deg 100% 70%);
 	color: hsl(166deg 100% 70%);
-	/* background-color: hsl(166deg 100% 70% / 20%); */
-
-	/* &:focus, */
 	&:active,
 	&:hover {
 		border-left-color: hsl(166deg 100% 70%);

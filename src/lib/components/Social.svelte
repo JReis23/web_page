@@ -1,7 +1,3 @@
-<script>
-import { onMount } from 'svelte';
-</script>
-
 <div class="social fixed bottom-8 left-8">
 	<ul>
 		<li class="social-link transition duration-700 hover:-translate-y-4 hover:shadow-xl">
@@ -102,20 +98,11 @@ import { onMount } from 'svelte';
 
 <style>
 a {
-	/* display: inline-block; */
-	/* transition-duration: 0.5s; */
-
 	&:hover {
 		transform: translateY(-5px);
 		color: var(--color-green);
 	}
 }
-
-/* a svg {
-	&:hover {
-		fill: var(--color-green);
-	}
-} */
 
 @media (max-width: 768px) {
 	.social {

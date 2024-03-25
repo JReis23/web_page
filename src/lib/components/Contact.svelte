@@ -1,5 +1,4 @@
 <script lang="ts">
-//je veux fermer le modal quand je clique sur le bouton Envoyer
 import { fade } from 'svelte/transition';
 import Button from '$lib/ui/Button.svelte';
 import CloseButton from '$lib/ui/CloseButton.svelte';

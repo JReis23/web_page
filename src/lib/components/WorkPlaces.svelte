@@ -54,7 +54,6 @@ let className = 'border-l-2 hover:border-green primary hover:text-green p-2 text
 			{/each}
 		</div>
 		<div class="container">
-			<!-- content here -->
 			{#each info[0].experiences as item}
 				{#if societyButton === item.company}
 					<div>
@@ -119,12 +118,5 @@ a:hover::before {
 	li {
 		padding: 0.375rem 1rem;
 	}
-
-	/* .buttons {
-			overflow-x: scroll;
-			-webkit-overflow-scrolling: touch;
-			width: 98vw;
-			white-space: nowrap;
-		} */
 }
 </style>

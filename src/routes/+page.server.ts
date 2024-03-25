@@ -1,4 +1,3 @@
-// import { getMongoClient } from '$lib/db/mogodb';
 import { db } from '$lib/db/db.sever';
 import { messagesTable, usersTable } from '$lib/db/schema';
 import type { PageServerLoad, Actions } from './$types';
